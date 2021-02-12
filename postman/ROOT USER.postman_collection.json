@@ -1,0 +1,172 @@
+{
+	"info": {
+		"_postman_id": "10a2d86b-b670-47fd-b69e-9be7dc69dad5",
+		"name": "ROOT USER",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/api-root/user/list",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:4000/api-root/user/list?limit=10&page=1&sort=createdAt&sortDir=asc",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api-root",
+						"user",
+						"list"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "10"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "sort",
+							"value": "createdAt"
+						},
+						{
+							"key": "sortDir",
+							"value": "asc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api-root/user/detail/:user",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:4000/api-root/user/detail/60213d745154f15cb702bf89",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api-root",
+						"user",
+						"detail",
+						"60213d745154f15cb702bf89"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api-root/user/create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"IsVerified\": true,\r\n    \"email\": \"test2@gmail.com\",\r\n    \"name\": \"TEST 2\",\r\n    \"password\": \"secret123456\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:4000/api-root/user/create",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api-root",
+						"user",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api-root/user/update/:user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"IsVerified\": true,\r\n    \"name\": \"TEST 2 EDIT\",\r\n    \"password\": \"secret123456\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:4000/api-root/user/update/60213d745154f15cb702bf89",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api-root",
+						"user",
+						"update",
+						"60213d745154f15cb702bf89"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api-root/user/delete/:user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:4000/api-root/user/delete/60213d745154f15cb702bf89",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api-root",
+						"user",
+						"delete",
+						"60213d745154f15cb702bf89"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

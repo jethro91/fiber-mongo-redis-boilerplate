@@ -1,0 +1,63 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Email Verify</title>
+  </head>
+
+  <body>
+    <h4
+      style="
+        text-align: center;
+        font-family: 'Raleway', sans-serif;
+        font-size: 22px;
+        font-weight: bold;
+        color: #333;
+        margin-top: 24px;
+      "
+    >
+      Konfirmasi Email
+    </h4>
+    <p
+      style="
+        text-align: center;
+        font-family: 'Lato', sans-serif;
+        font-size: 14px;
+        color: #757575;
+        line-height: 24px;
+        font-weight: 300;
+      "
+    >
+      Silahkan klik Link dibawah ini untuk mengkonfirmasi email. Jika tidak
+      berhasil, silahkan buka link terbawah email ini.
+
+      <br />
+      <br />
+      <b>
+        <a target="_blank" href="{{.url}}">Konfirmasi </a>
+      </b>
+    </p>
+    <a target="_blank" href="{{.url}}">
+      <img
+        style="display: block; margin-left: auto; margin-right: auto"
+        src="https://webdevtrick.com/wp-content/uploads/email.png"
+        width="78"
+        height="78"
+        alt="icon"
+      />
+    </a>
+
+    <p
+      style="
+        text-align: center;
+        font-family: 'Raleway', Arial, sans-serif;
+        font-size: 12px;
+        color: #333;
+        line-height: 24px;
+        font-weight: bold;
+      "
+    >
+      <a target="_blank" href="{{.url}}"> {{.url}} </a>
+    </p>
+  </body>
+</html>

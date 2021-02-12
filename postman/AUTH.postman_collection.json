@@ -1,0 +1,259 @@
+{
+	"info": {
+		"_postman_id": "8fc6450f-1cd8-4f41-a393-1591a23a84f1",
+		"name": "AUTH",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/api/auth/login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"test@mail.com\",\r\n    \"password\": \"secret123456\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:4000/api/auth/login",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/auth/logout",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:4000/api/auth/logout",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"auth",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/auth/register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"test@mail.com\",\r\n    \"name\": \"Test Name\",\r\n    \"password\": \"rahasia123456\",\r\n    \"PasswordConfirmation\": \"rahasia123456\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:4000/api/auth/register",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/auth/email-resend",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"test@mail.com\",\r\n    \"name\": \"Test Name\",\r\n    \"password\": \"rahasia123456\",\r\n    \"PasswordConfirmation\": \"rahasia123456\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:4000/api/auth/register",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/auth/email-verify",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/auth/email-verify?id=601f92a3f365900748d9776a&token=52e17b67fd82b0545bb4fbdc5748ed23104133c7&expires=1612725091090&signature=1ded0ed691f7f1061ed9ab860a4f704b412bf5cede89a872922a82712bc55495",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"auth",
+						"email-verify"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "601f92a3f365900748d9776a"
+						},
+						{
+							"key": "token",
+							"value": "52e17b67fd82b0545bb4fbdc5748ed23104133c7"
+						},
+						{
+							"key": "expires",
+							"value": "1612725091090"
+						},
+						{
+							"key": "signature",
+							"value": "1ded0ed691f7f1061ed9ab860a4f704b412bf5cede89a872922a82712bc55495"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/auth/reset-request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"test@mail.com\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:4000/api/auth/reset-request",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"auth",
+						"reset-request"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/auth/reset-verify",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"test@mail.com\",\r\n    \"password\": \"secret123456\",\r\n    \"PasswordConfirmation\": \"secret123456\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:4000/api/auth/reset-verify?id=60213aa0167321ae2c1bccdd&token=52e17b67fd82b0545bb4fbdc5748ed23104133c7&expires=1612833632055&signature=dcc17e075cf5e69d1aa3983a4d911c11f15985ce8f9ffec724b7295c2b2bc579",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"auth",
+						"reset-verify"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "60213aa0167321ae2c1bccdd"
+						},
+						{
+							"key": "token",
+							"value": "52e17b67fd82b0545bb4fbdc5748ed23104133c7"
+						},
+						{
+							"key": "expires",
+							"value": "1612833632055"
+						},
+						{
+							"key": "signature",
+							"value": "dcc17e075cf5e69d1aa3983a4d911c11f15985ce8f9ffec724b7295c2b2bc579"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
