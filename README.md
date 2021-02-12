@@ -1,4 +1,5 @@
-Fiber + mongodb + redis Mockup
+Fiber + mongodb + redis Boilerplate
+for real world application example
 
 1. chmod 777 ./docker-compose.yml
 
