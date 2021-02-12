@@ -4,8 +4,8 @@ import (
 	"fmt"
 
 	"github.com/gofiber/fiber/v2"
-	sessionStore "github.com/jethro91/fiber-mongo-redis/src/model/sessionStoreJWT"
-	"github.com/jethro91/fiber-mongo-redis/src/util"
+	sessionStore "github.com/jethro91/fiber-mongo-redis-boilerplate/src/model/sessionStoreJWT"
+	"github.com/jethro91/fiber-mongo-redis-boilerplate/src/util"
 )
 
 func IsGuest(c *fiber.Ctx) error {

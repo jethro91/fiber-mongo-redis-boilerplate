@@ -6,8 +6,8 @@ import (
 	"reflect"
 
 	"github.com/gofiber/fiber/v2"
-	sessionStore "github.com/jethro91/fiber-mongo-redis/src/model/sessionStoreJWT"
-	"github.com/jethro91/fiber-mongo-redis/src/util"
+	sessionStore "github.com/jethro91/fiber-mongo-redis-boilerplate/src/model/sessionStoreJWT"
+	"github.com/jethro91/fiber-mongo-redis-boilerplate/src/util"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 )

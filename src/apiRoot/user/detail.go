@@ -4,8 +4,8 @@ import (
 	"github.com/gofiber/fiber/v2"
 	"go.mongodb.org/mongo-driver/bson"
 
-	"github.com/jethro91/fiber-mongo-redis/src/model"
-	"github.com/jethro91/fiber-mongo-redis/src/util"
+	"github.com/jethro91/fiber-mongo-redis-boilerplate/src/model"
+	"github.com/jethro91/fiber-mongo-redis-boilerplate/src/util"
 )
 
 func detail(c *fiber.Ctx) error {

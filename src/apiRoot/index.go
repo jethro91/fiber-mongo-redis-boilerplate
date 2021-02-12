@@ -3,9 +3,9 @@ package apiRoot
 import (
 	"github.com/gofiber/fiber/v2"
 
-	"github.com/jethro91/fiber-mongo-redis/src/apiRoot/passwordReset"
-	"github.com/jethro91/fiber-mongo-redis/src/apiRoot/role"
-	"github.com/jethro91/fiber-mongo-redis/src/apiRoot/user"
+	"github.com/jethro91/fiber-mongo-redis-boilerplate/src/apiRoot/passwordReset"
+	"github.com/jethro91/fiber-mongo-redis-boilerplate/src/apiRoot/role"
+	"github.com/jethro91/fiber-mongo-redis-boilerplate/src/apiRoot/user"
 )
 
 func CreateApiRouter(app *fiber.App) {

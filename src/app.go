@@ -3,9 +3,9 @@ package src
 import (
 	"github.com/gofiber/fiber/v2"
 
-	"github.com/jethro91/fiber-mongo-redis/src/api"
-	"github.com/jethro91/fiber-mongo-redis/src/apiRoot"
-	"github.com/jethro91/fiber-mongo-redis/src/middleware"
+	"github.com/jethro91/fiber-mongo-redis-boilerplate/src/api"
+	"github.com/jethro91/fiber-mongo-redis-boilerplate/src/apiRoot"
+	"github.com/jethro91/fiber-mongo-redis-boilerplate/src/middleware"
 )
 
 func CreateApp() *fiber.App {

@@ -3,9 +3,9 @@ package api
 import (
 	"github.com/gofiber/fiber/v2"
 
-	"github.com/jethro91/fiber-mongo-redis/src/api/auth"
-	"github.com/jethro91/fiber-mongo-redis/src/api/home"
-	"github.com/jethro91/fiber-mongo-redis/src/api/user"
+	"github.com/jethro91/fiber-mongo-redis-boilerplate/src/api/auth"
+	"github.com/jethro91/fiber-mongo-redis-boilerplate/src/api/home"
+	"github.com/jethro91/fiber-mongo-redis-boilerplate/src/api/user"
 )
 
 func CreateApiRouter(app *fiber.App) {

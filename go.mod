@@ -1,4 +1,4 @@
-module github.com/jethro91/fiber-mongo-redis
+module github.com/jethro91/fiber-mongo-redis-boilerplate
 
 go 1.15
 

@@ -2,7 +2,7 @@ package redisDB
 
 import (
 	"github.com/go-redis/redis/v8"
-	"github.com/jethro91/fiber-mongo-redis/src/config"
+	"github.com/jethro91/fiber-mongo-redis-boilerplate/src/config"
 )
 
 var (

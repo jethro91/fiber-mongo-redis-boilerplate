@@ -5,7 +5,7 @@ import (
 	"errors"
 	"time"
 
-	"github.com/jethro91/fiber-mongo-redis/src/config"
+	"github.com/jethro91/fiber-mongo-redis-boilerplate/src/config"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"go.mongodb.org/mongo-driver/mongo/options"

@@ -2,7 +2,7 @@ package auth
 
 import (
 	"github.com/gofiber/fiber/v2"
-	sessionStore "github.com/jethro91/fiber-mongo-redis/src/model/sessionStoreJWT"
+	sessionStore "github.com/jethro91/fiber-mongo-redis-boilerplate/src/model/sessionStoreJWT"
 	"go.mongodb.org/mongo-driver/bson"
 )
 

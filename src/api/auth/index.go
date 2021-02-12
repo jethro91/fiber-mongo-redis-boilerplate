@@ -2,7 +2,7 @@ package auth
 
 import (
 	"github.com/gofiber/fiber/v2"
-	"github.com/jethro91/fiber-mongo-redis/src/middleware"
+	"github.com/jethro91/fiber-mongo-redis-boilerplate/src/middleware"
 )
 
 func RouterGroup(api fiber.Router) {

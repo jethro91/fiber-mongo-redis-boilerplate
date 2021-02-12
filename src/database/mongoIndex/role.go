@@ -3,7 +3,7 @@ package mongoIndex
 import (
 	"fmt"
 
-	"github.com/jethro91/fiber-mongo-redis/src/database/mongoDB"
+	"github.com/jethro91/fiber-mongo-redis-boilerplate/src/database/mongoDB"
 	"go.mongodb.org/mongo-driver/bson"
 )
 

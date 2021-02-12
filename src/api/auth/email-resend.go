@@ -2,9 +2,9 @@ package auth
 
 import (
 	"github.com/gofiber/fiber/v2"
-	"github.com/jethro91/fiber-mongo-redis/src/model"
-	"github.com/jethro91/fiber-mongo-redis/src/util"
-	"github.com/jethro91/fiber-mongo-redis/src/util/emailTemplate"
+	"github.com/jethro91/fiber-mongo-redis-boilerplate/src/model"
+	"github.com/jethro91/fiber-mongo-redis-boilerplate/src/util"
+	"github.com/jethro91/fiber-mongo-redis-boilerplate/src/util/emailTemplate"
 	"go.mongodb.org/mongo-driver/bson"
 )
 

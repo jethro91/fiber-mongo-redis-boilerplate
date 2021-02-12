@@ -5,7 +5,7 @@ import (
 	"strings"
 
 	"github.com/gofiber/fiber/v2"
-	"github.com/jethro91/fiber-mongo-redis/src/database/redisDB"
+	"github.com/jethro91/fiber-mongo-redis-boilerplate/src/database/redisDB"
 	"go.mongodb.org/mongo-driver/bson"
 )
 

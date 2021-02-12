@@ -5,9 +5,9 @@ import (
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 
-	"github.com/jethro91/fiber-mongo-redis/src/config"
-	"github.com/jethro91/fiber-mongo-redis/src/database/redisDB"
-	"github.com/jethro91/fiber-mongo-redis/src/util"
+	"github.com/jethro91/fiber-mongo-redis-boilerplate/src/config"
+	"github.com/jethro91/fiber-mongo-redis-boilerplate/src/database/redisDB"
+	"github.com/jethro91/fiber-mongo-redis-boilerplate/src/util"
 )
 
 func UpdateSession(c *fiber.Ctx, clientSessionId string, user primitive.M) error {

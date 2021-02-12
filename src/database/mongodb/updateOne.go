@@ -6,8 +6,8 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/jethro91/fiber-mongo-redis/src/config"
-	"github.com/jethro91/fiber-mongo-redis/src/util"
+	"github.com/jethro91/fiber-mongo-redis-boilerplate/src/config"
+	"github.com/jethro91/fiber-mongo-redis-boilerplate/src/util"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 )

@@ -4,8 +4,8 @@ import (
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 
-	"github.com/jethro91/fiber-mongo-redis/src/database/redisDB"
-	"github.com/jethro91/fiber-mongo-redis/src/util"
+	"github.com/jethro91/fiber-mongo-redis-boilerplate/src/database/redisDB"
+	"github.com/jethro91/fiber-mongo-redis-boilerplate/src/util"
 )
 
 func GetSession(clientSessionId string) (primitive.M, error) {

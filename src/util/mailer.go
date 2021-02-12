@@ -9,7 +9,7 @@ import (
 	"io"
 	"strconv"
 
-	"github.com/jethro91/fiber-mongo-redis/src/config"
+	"github.com/jethro91/fiber-mongo-redis-boilerplate/src/config"
 	"gopkg.in/gomail.v2"
 )
 
